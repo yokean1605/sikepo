@@ -1,61 +1,35 @@
 {
-  "name": "bootstrap-gulp-starter-template",
-  "version": "1.4.0",
-  "description": "a bootstrap boiler plate with sass, concatenation, minification, autoprefixer, sourcemaps, browser-sync, git and gulp task runner",
-  "main": "index.js",
-  "scripts": {
-    "development": "gulp development",
-    "production": "gulp production",
-    "linters": "gulp lint",
-    "accessibility": "gulp a11y"
-  },
-  "author": "johndavemanuel",
+  "name": "bootstrap-4-boilerplate",
+  "version": "1.0.3",
+  "description": "Bootstrap 4+ boilerplate with Gulp4, cross-env, SaSS, sourcemaps, concat, CSS & HTML minification, uglify, image optimization, template partials, BrowserSync, ready for deployment.",
+  "author": "Sal",
   "license": "MIT",
+  "homepage": "https://bootstrapstarter.com/bootstrap-templates/template-basic-bootstrap-html/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/johndavemanuel/bootstrap4-gulp-starter-template"
+    "url": "https://github.com/wowthemesnet/bootstrap-4-boilerplate.git"
+  },
+  "scripts": {
+    "start": "gulp",
+    "dev": "gulp serve",
+    "prod": "cross-env NODE_ENV=prod gulp"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.4",
-    "ansi-colors": "^4.1.1",
-    "babel-core": "^6.26.3",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "browser-sync": "^2.18.13",
-    "csscomb": "^4.2.0",
-    "del": "^5.0.0",
-    "fancy-log": "^1.3.3",
+    "bootstrap": "^4.4.1",
+    "browser-sync": "^2.26.3",
+    "cross-env": "^7.0.2",
     "gulp": "^4.0.2",
-    "gulp-accessibility": "^3.1.1",
-    "gulp-autoprefixer": "^6.1.0",
-    "gulp-babel": "^8.0.0",
-    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-clean": "^0.4.0",
     "gulp-concat": "^2.6.1",
     "gulp-cssmin": "^0.2.0",
-    "gulp-gh-pages": "^0.5.4",
-    "gulp-html-replace": "^1.6.2",
-    "gulp-htmllint": "0.0.16",
-    "gulp-imagemin": "^6.0.0",
-    "gulp-jshint": "^2.1.0",
-    "gulp-newer": "^1.4.0",
-    "gulp-pretty-html": "^2.0.9",
-    "gulp-remove-code": "^3.0.4",
-    "gulp-remove-logging": "^1.2.0",
-    "gulp-rename": "^1.4.0",
+    "gulp-html-partial": "^1.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-js-import": "^1.0.6",
     "gulp-sass": "^4.0.2",
-    "gulp-sass-lint": "^1.4.0",
-    "gulp-sourcemaps": "^2.6.1",
-    "gulp-uglify": "^3.0.0",
-    "gulp-uglify-es": "^1.0.4",
-    "jshint": "^2.10.1",
-    "node-bourbon": "^4.2.8",
-    "panini": "^1.6.3",
-    "run-sequence": "^2.2.1",
-    "chalk": "^4.0.0"
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2"
   },
-  "dependencies": {
-    "bootstrap": "^4.5.0",
-    "jquery": "^3.3.1",
-    "popper.js": "^1.14.7"
-  }
+  "dependencies": {}
 }
