@@ -114,3 +114,54 @@
     @extend .media-page;
     background-color: #FFEFE2;
 }
+
+.table-sikepho {
+    border-spacing: 0 5px;
+    border-collapse: separate;
+    thead tr th {
+        background-color: #004AC1;
+        color: white;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+        border-top: none !important;
+        font-family: $font-opensans;
+    }
+    tbody tr td {
+        font-family: $font-opensans;
+        padding: 45px 20px;
+        background-color: #FFF7F0;
+        margin-bottom: 10px;
+        border-top: none !important;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #52473E;
+    }
+
+}
+.result {
+    font-family: $font-opensans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #757575;
+}
+.show-result {
+    strong, select {
+        font-family: $font-opensans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        color: #52473E;
+    }
+}
+
+.section-page {
+    margin-bottom: 100px;
+}
