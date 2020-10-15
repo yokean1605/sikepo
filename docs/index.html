@@ -14,79 +14,306 @@
     </head>
     
     <body>
-        <nav class="navbar navbar-expand-sm navbar-light">
-            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
-            data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-            aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav ml-auto mt-2 mt-lg-0 navbar-cstm">
-                    <li class="nav-item active"> <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item"> <a class="nav-link" href="#">Tentang Kami</a>
-                    </li>
-                    <li class="nav-item"> <a class="nav-link" href="#">Produk Hukum</a>
-                    </li>
-                    <li class="nav-item"> <a class="nav-link" href="#">Statistik Pendidikan</a>
-                    </li>
-                    <li class="nav-item"> <a class="nav-link" href="#">Panduan</a>
-                    </li>
-                </ul>
-                <div class="d-inline spacer-btn"> <a href="" class="nav-link btn-sign-in">
+        <header id="header">
+            <div class="bg-nav">
+                <nav class="navbar navbar-expand-md navbar-light nav-custom fixed-top pt-4"> <a class="navbar-brand" href="#">
+
+            <img src="./../img/Logo.svg" alt="logo">
+
+        </a>
+                    <button class="navbar-toggler d-lg-none text-white" type="button"
+                    data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">Menu
+                        <!-- <span class="navbar-toggler-icon"></span> -->
+                        <img src="./../img/menu.svg" alt="" class="img-fluid">
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav ml-auto mt-2 mt-lg-0 navbar-cstm">
+                            <li class="nav-item active"> <a class="nav-link js-scroll-trigger" href="#header">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#about_us">Tentang Kami</a>
+                            </li>
+                            <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#hukum">Produk Hukum</a>
+                            </li>
+                            <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#statistik">Statistik Pendidikan</a>
+                            </li>
+                            <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#panduan">Panduan</a>
+                            </li>
+                        </ul>
+                        <div class="d-inline spacer-btn"> <a href="" class="nav-link btn-sign-in">
 
                     <i class="fas fa-user-alt"></i> Sign in
 
                 </a>
-                </div>
+                        </div>
+                    </div>
+                </nav>
             </div>
-        </nav>
-        <header>
             <div class="container">
                 <div class="content">
                     <div class="row">
                         <div class="col-lg-7">
-                            <img src="./img/Logo.svg" alt="" class="img-fluid img-logo mb-3">
-                            <div class="content-header">
-                                	<h1>Sistem Informasi Kepegawaian Hukum Organisasi Penyelenggaraan Haji dan Umrah</h1>
-                                	<h3 class="welcome">Selamat datang dilayanan Sistem Informasi Kepegawaian <br> Hukum Organisasi Penyelenggaraan Haji dan Umrah</h3>
-                            </div>
-                            <div class="button-header">	<a href="" class="btn btn-login rounded-0">
+                            <div class="pt-custom">
+                                <img src="./img/Logo.svg" alt="" class="img-fluid img-logo mb-3">
+                                <div class="content-header">
+                                    	<h1>Sistem Informasi Kepegawaian Hukum Organisasi Penyelenggaraan Haji dan Umrah</h1>
+                                    	<h3 class="welcome">Selamat datang dilayanan Sistem Informasi Kepegawaian <br> Hukum Organisasi Penyelenggaraan Haji dan Umrah</h3>
+                                </div>
+                                <div class="button-header">	<a href="" class="btn btn-login rounded-0">
 
-							Login Aplikasi
+								Login Aplikasi
 
-						</a>	<a href="" class="btn btn-signup rounded-0">
+							</a>	<a href="" class="btn btn-signup rounded-0">
 
-							Pembuatan Akun
+								Pembuatan Akun
 
-						</a>
+							</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row mt-5">
-                        <div class="col-4">
-                            <div class="button-bg-header">
-                                <img src="./img/Kepegawaian Icon.png" alt="" class="img-fluid">
+                    <div class="button-headers">
+                        <div class="row">
+                            <div class="col-lg-4 mb-3 mb-lg-0">
+                                <div class="button-bg-header d-flex align-items-center">
+                                    <img src="./img/Kepegawaian Icon.png" alt="" class="img-fluid">	<span>
+
+								Kepegawaian
+
+							</span>
+                                    <div class="arrow">
+                                        <img src="./img/mdi_arrow_forward.svg" alt="arrow" class="img-fluid">
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="button-bg-header">
-                                <img src="./img/Hukum Icon.png" alt="" class="img-fluid">
+                            <div class="col-lg-4 mb-3 mb-lg-0">
+                                <div class="button-bg-header d-flex align-items-center">
+                                    <img src="./img/Hukum Icon.png" alt="" class="img-fluid">	<span class="d-flex align-items-center">
+
+								Hukum
+
+							</span>
+                                    <div class="arrow">
+                                        <img src="./img/mdi_arrow_forward.svg" alt="arrow" class="img-fluid">
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="button-bg-header">
-                                <img src="./img/Organisasi Icon.png" alt="" class="img-fluid">
+                            <div class="col-lg-4 mb-3 mb-lg-0">
+                                <div class="button-bg-header d-flex align-items-center">
+                                    <img src="./img/Organisasi Icon.png" alt="" class="img-fluid">	<span class="d-flex align-items-center">
+
+								Organisasi
+
+							</span>
+                                    <div class="arrow">
+                                        <img src="./img/mdi_arrow_forward.svg" alt="arrow" class="img-fluid">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
-        <footer class="footer container text-center">
-            <p>&copy; Bootstrap Basic Starter with Gulp</p>
-        </footer>
-        <script src="js/all.js"></script>
+        <section class="about-me" id="about_us">
+            <div class="container-fluid p-0">
+                <div class="row no-gutters">
+                    <div class="col-lg-5">
+                        <img src="./img/Macbook.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="content-tentang-kami">
+                            	<h6 class="">Tentang Kami</h6>
+                            <div class="title">
+                                	<h1 class="title-section text-white">Apa itu SIKEPHO PHU??</h1>
+                            </div>
+                            <div class="content-paragraph">
+                                <p class="mb-0 tetx-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, sapiente
+                                    quos neque atque soluta placeat facilis aut deserunt eum fuga, praesentium
+                                    sed suscipit error, laborum eaque aliquam voluptas quibusdam. Perferendis!</p>
+                            </div>	<a href="" class="btn btn-readmore">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="produk-hukum" id="hukum">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <div class="content-produk-hukum">
+                            	<h1 class="title-section text-center">Produk Hukum</h1>
+                            <div class="input-group md-form form-sm form-2 pl-0 search-produk-hukum">
+                                <input class="form-control my-0 py-1 lime-border" type="text" placeholder="Masukkan kata kunci yang ingin kami cari"
+                                aria-label="Masukkan kata kunci yang ingin kami cari">
+                                <div class="input-group-append"> <span class="input-group-text lime lighten-2" id="basic-text1">Search</span>
+                                </div>
+                            </div>
+                            <div class="content-paragraph">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur expedita
+                                    illum aut optio libero, obcaecati quibusdam dolor repellendus quos laudantium
+                                    pariatur at facilis accusamus quidem veniam dolores inventore recusandae
+                                    nobis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="statistik-kegiatan" id="statistik">
+            <div class="container">
+                <div class="content-statistik">
+                    	<h1 class="title-section text-center">Statistik Kegiatan</h1>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="item-number">
+                            <div class="number">580</div>
+                            <div class="text-number">put text here</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="item-number">
+                            <div class="number">3241</div>
+                            <div class="text-number">put text here</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="item-number">
+                            <div class="number">121</div>
+                            <div class="text-number">put text here</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="paragraph">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet rerum accusamus
+                        rem tempora corporis consequatur aliquid nisi delectus ipsum soluta sit
+                        provident aperiam, nostrum, eligendi dolor ut, veritatis hic non?</p>
+                </div>
+            </div>
+        </section>
+        <section class="panduan" id="panduan">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="content-panduan">
+                            	<h1 class="title-section">Panduan</h1>
+                            <div class="content-paragraph">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex iusto repellendus
+                                    modi delectus eaque? Impedit officia dolor unde illum sit corporis nisi
+                                    quia nihil? Fugit eos aut sed placeat iusto!</p>
+                            </div>	<a href="" class="btn btn-download-panduan">Download Panduan</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <iframe width="100%" height="325" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="content-footer">
+                            <div class="d-flex">
+                                <div class="logo">
+                                    <img src="./../img/kemenag.png" alt="logo" class="imh-fluid">
+                                </div>
+                                <div class="content-footer-kemenag">
+                                    <div class="title">
+                                         <h1>SIKEPO PHU</h1>
+                                    </div>
+                                    <div class="subtitle">
+                                         <h6 class="mb-0">Direktor Jenderal Penyelenggaraan <br> Haji dan Umroh</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="address-footer"> <small>
+
+                            Jl. Lapangan Banteng Barat No. 3-4, Jakarta 10710 <br>
+
+                            +(6221) 38116789  | Direktorat Jenderal Penyelenggaraan Haji dan Umrah
+
+                        </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="content-footer">
+                            <div class="title-footer">
+                                 <h1>Link Terkait</h1>
+                            </div>
+                            <ul class="list-unstyled list-menus-footer">
+                                <li class=""> <a href="">Republik Indonesia</a>
+                                </li>
+                                <li class=""> <a href="">Kementerian Agama Republik Indonesia</a>
+                                </li>
+                                <li class=""> <a href="">Direktorat Jenderal Penyelenggara</a>
+                                </li>
+                                <li class=""> <a href="">Haji dan Umrah</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="content-footer">
+                            <div class="title-footer">
+                                 <h1>Statistik Pengunjung</h1>
+                            </div>
+                            <ul class="list-unstyled list-menus-footer">
+                                <li class=""> <a href="">Hari ini   2145</a>
+                                </li>
+                                <li class=""> <a href="">Bulan ini 1241</a>
+                                </li>
+                                <li class=""> <a href="">Tahun ini 124</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <div class="line-copyright"></div>
+                    <div class="row">
+                        <div class="col-3">
+                            <ul class="list-inline">
+                                <li class="list-inline-item"> <a href="">
+
+                                <i class="fab fa-instagram"></i>
+
+                            </a>
+                                </li>
+                                <li class="list-inline-item"> <a href="">
+
+                                <i class="fab fa-facebook-square"></i>
+
+                            </a>
+                                </li>
+                                <li class="list-inline-item"> <a href="">
+
+                                <i class="fab fa-youtube"></i>
+
+                            </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-9"> <span class="float-right copyright-text">Copyright 2020  Direktorat Direktorat Jenderal Penyelenggaraan Haji dan Umrah - Kementerian Agama Republik Indonesia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer> <a href="#header" class="scroll-to-top">
+
+        <img src="./../img/UpArrowButton.svg" alt="img" class="img-fluid img-top">
+
+    </a>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="js/scripts.js"></script>
     </body>
 
 </html>

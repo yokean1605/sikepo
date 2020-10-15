@@ -44,7 +44,7 @@ function js() {
         .pipe(jsImport({
             hideConsole: true
         }))
-        .pipe(concat('all.js'))
+        .pipe(concat('scripts.js'))
         .pipe(gulpIf(isProd, uglify()))
         .pipe(gulp.dest('docs/js'));
 }

@@ -7,11 +7,16 @@
     }
 }
 .navbar {
-    background-color: #004AC1 !important;
     .navbar-cstm > li.nav-item > a.nav-link {
         color: white !important;
         font-family: $font-opensans;
+        font-style: normal;
         font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        @media screen and(max-width: 768px) {
+            color: #004AC1 !important;
+        }
     }
 }
 .spacer-btn {
@@ -26,12 +31,19 @@
         font-size: 16px;
     }
 }
+.button-headers{
+    margin-top: 245px;
+}
 header {
-    padding-top: 30px;
     background-color: #004AC1;
-    min-height: 100vh;
+    min-height: 100%;
+    background-image: url('./../img/ornament_landingpageutama.svg');
+    background-repeat: no-repeat;
+    padding-bottom: 175px;
     .img-logo {
         max-width: 270px;
+        position: relative;
+        left: -60px;
     }
     .content-header {
         margin-bottom: 55px;
@@ -53,6 +65,215 @@ header {
             border-left: 5px solid #FFC700;
         }
     }
+}
+section{
+    padding: 40px 0;
+}
+section.about-me {
+    min-height: 607px;
+    padding: 115px 0 100px 0;
+    background-color: #004AC1;
+    background-image: url(./../img/about.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    .content-tentang-kami {
+        h6 {
+            color: white;
+            margin-bottom: 62px;
+            margin-top: 30px;
+            border-right: 2px solid #FF7200;
+            border-left: 2px solid #FF7200;
+            display: inline-block;
+            padding: 0 8px;
+        }
+    }
+}
+
+section.produk-hukum {
+    background-image: url(./../img/bg-produk.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding-top: 151px;
+    padding-bottom: 15px;
+    .search-produk-hukum {
+        margin-top: 50px;
+        margin-bottom: 38px;
+        >input {
+            border: 1px solid #FF7200;
+            border-radius: 0px !important;
+            height: 58px;
+        }
+    }
+    .input-group-append span {
+        min-width: 175px;
+        background-color: #FF7200;
+        border: 1px solid #FF7200;
+        border-radius: 0px;
+        justify-content: center;   
+        color: white;
+    }
+    .content-paragraph {
+        width: 100%;
+        color: black;
+        text-align: center;
+    }
+}
+
+section.statistik-kegiatan {
+    padding-top: 245px;
+    padding-bottom: 320px;
+    background-image: url(./../img/bg-statistik.svg);
+    background-repeat: no-repeat;
+    .content-statistik h1 {
+        margin-bottom: 60px;
+    }
+    .item-number {
+        padding: 40px;
+        text-align: center;
+        box-shadow: 9.18865px 16.3354px 62.2786px rgba(0, 0, 0, 0.05);
+        background-color: #FFFFFF;
+        .number {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 70px;
+            line-height: 95px;
+            text-align: center;
+            letter-spacing: -0.03em;
+            color: #2C2C2C;
+        }
+        .text-number {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 21.2526px;
+            line-height: 29px;
+            text-align: center;
+            letter-spacing: -0.03em;
+            color: #656565;
+        }
+    }
+    .paragraph {
+        p {
+            font-size: 16px;
+            line-height: 120.68%;
+            text-align: center;
+            margin-bottom: 0;
+            max-width: 515px;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 45px;
+        }
+    }
+}
+
+section.panduan {
+    padding-top: 0px;
+    background-image: url(./../img/bg-panduan.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    padding-bottom: 310px;
+    .content-paragraph {
+        p {
+            color: black;
+        }
+    }
+}
+
+.title-footer h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    margin-bottom: 20px;
+}
+.list-menus-footer li a{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 208.52%;
+    letter-spacing: -0.03em;
+    color: #737373;
+}
+
+.content-footer-kemenag {
+    margin-left: 15px;
+    padding-left: 15px;
+    border-left: 1px solid #C0C0C0;
+    .title {
+        h1 {
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 24px;
+            color: black;
+            margin-bottom: 0px;
+        }
+    }
+    .subtitle {
+        font-family: $font-inter;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+    }
+}
+.address-footer {
+    margin-top: 35px;
+    small {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 173.68%;
+    }
+}
+
+.btn-download-panduan {
+    background: #004AC1;
+    min-height: 58px;
+    min-width: 210px;
+    color: white;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    border-radius: 0px;
+    padding: 16px 0;
+}
+
+.content-paragraph {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120.68%;
+    color: #FFFFFF;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    @media screen and(min-width: 991px){
+        width: 75%;
+    }
+}
+
+.btn-readmore {
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120.68%;
+    letter-spacing: -0.03em;
+    border-bottom: 2px solid #FF7200;
+    padding: 0px;
+}
+
+.title-section {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 103.8%;
+    letter-spacing: -0.02em;
+    color: black;
 }
 .button-header {
     a {
@@ -80,7 +301,81 @@ header {
 .button-bg-header {
     padding: 20px;
     background-color: #fff;
+    position: relative;
+    span {
+        font-family: $font-inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 103.8%;
+        letter-spacing: -0.02em;
+        color: #272827;
+        margin-left: 20px;
+    }
+    .arrow {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+    }
 }
 .footer {
-    margin-top:3rem;
+    padding-top: 220px;
+    background-image: url(./../img/bg-footer.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: auto;
+    min-height: 470px;
+}
+.copyright {
+    .line-copyright{
+        padding-top: 15px;
+        border-top: 1px solid #B6B6B6;
+    }
+}
+.copyright-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 141.02%;
+    text-align: right;
+    letter-spacing: -0.03em;
+    color: #050505;
+}
+
+.scroll-to-top {
+    display: none;
+    position: fixed;
+    right: 3px;
+    bottom: 30px;
+}
+
+.navbar-brand {
+    display: none;
+    img {
+        max-width: 100px;
+    }
+    @media screen and(max-width: 768px) {
+        display: block;
+    }
+}
+
+.pt-custom {
+    @media screen and(min-width: 768px) {
+        margin-top: 120px;
+    }
+}
+
+.nav-custom {
+    button {
+        border-color: white;
+        > img {
+            max-width: 40px;
+        }
+    }
+    @media screen and(max-width: 768px) {
+        color: white;
+        background-color: #004AC1;
+        padding-top: 15px !important;
+        box-shadow: 0 1px 3px #FFFFFF;
+    }
 }
