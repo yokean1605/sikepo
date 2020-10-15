@@ -15,13 +15,17 @@
         font-size: 14px;
         line-height: 19px;
         @media screen and(max-width: 768px) {
-            color: #004AC1 !important;
+            // color: #004AC1 !important;
         }
     }
 }
 .spacer-btn {
     margin-left: 30px;
     border-left: 1px solid white;
+    @media screen and(max-width: 767px){
+        margin-left: 0px;
+        border: none;
+    }
     .btn-sign-in {
         font-family: $font-inter;
         margin-left: 30px;
@@ -29,6 +33,15 @@
         color: white;
         font-weight: 500;
         font-size: 16px;
+        @media screen and(max-width: 767px){
+            display: inline-block;
+            margin-left: 0px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            a > i {
+                margin-right: 1px;
+            }
+        }
     }
 }
 .button-headers{
@@ -354,15 +367,13 @@ section.panduan {
     img {
         max-width: 100px;
     }
-    @media screen and(max-width: 768px) {
+    @media screen and(max-width: 767px) {
         display: block;
     }
 }
 
 .pt-custom {
-    @media screen and(min-width: 768px) {
-        margin-top: 120px;
-    }
+    margin-top: 120px;
 }
 
 .nav-custom {
@@ -372,10 +383,16 @@ section.panduan {
             max-width: 40px;
         }
     }
-    @media screen and(max-width: 768px) {
+    @media screen and(max-width: 767px) {
         color: white;
         background-color: #004AC1;
         padding-top: 15px !important;
         box-shadow: 0 1px 3px #FFFFFF;
+    }
+}
+
+.content-tentang-kami {
+    @media screen and(max-width:991px) {
+        padding: 30px;
     }
 }
