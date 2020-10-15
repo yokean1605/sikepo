@@ -8,6 +8,7 @@
     }
 }
 .navbar {
+    transition: all 0.3 ease;
     .navbar-cstm > li.nav-item > a.nav-link {
         color: white !important;
         font-family: $font-opensans;
@@ -427,6 +428,7 @@ section.panduan {
         font-size: 14px;
         line-height: 19px;
         color: #A6A6A6;
+        font-family: $font-opensans;
     }
 }
 
@@ -442,6 +444,8 @@ section.panduan {
     position: absolute;
     right: 10px;
     top: 10px;
+    font-family: $font-opensans;
+
 }
 
 .form-group-custom {
@@ -451,14 +455,30 @@ section.panduan {
         font-size: 16px;
         line-height: 22px;
         color: white;
+        font-family: $font-opensans;
+
     }
     >select {
         border-radius: 5px;
         min-height: 45px;
+        font-family: $font-opensans;
+
     }
     button[type=reset] {
         position: relative;
         top: 35px;
         text-align: center;
+        font-family: $font-opensans;
+
+    }
+}
+
+.background-c {
+    background-color: #004AC1 !important;
+    padding-top: 12px !important;
+    .navbar-cstm {
+        li a {
+            color: white;
+        }
     }
 }

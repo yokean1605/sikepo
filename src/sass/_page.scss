@@ -10,12 +10,12 @@
             height: 25px;
         }
         > h3 {
+            font-family: $font-opensans;
             font-style: normal;
             font-weight: bold;
             font-size: 20px;
             line-height: 27px;
             color: #52473E;
-            margin: 0px;
         }
     }
     .content-sidebar {
@@ -28,6 +28,7 @@
             color: black;
             display: flex;
             .count-item {
+                font-family: $font-opensans;
                 font-style: normal;
                 font-weight: bold;
                 font-size: 16px;
@@ -49,6 +50,7 @@
                     }
                 }
                 a {
+                    font-family: $font-opensans;
                     padding-left: 15px;
                     &::before {
                         content: '';
@@ -72,6 +74,7 @@
     padding: 18px;
     color: white;
     h1 {
+        font-family: $font-opensans;
         font-weight: 600;
         font-size: 20px;
         line-height: 27px;
@@ -86,6 +89,22 @@
     background: #FFF7F0;
     padding: 20px;
     margin-bottom: 15px;
+    .media-body {
+        font-family: $font-opensans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: #595959;
+        h5 {
+            font-family: $font-opensans;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            color: #52473E;
+        }
+    }
     .p-img {
         background: #FFE7A3;
         border-radius: 4px;
@@ -99,8 +118,11 @@
             font-size: 12px;
             line-height: 16px;
             color: #020202;
+            font-family: $font-opensans;
+
         }
         .date {
+            font-family: $font-opensans;
             font-weight: bold;
             font-size: 12px;
             line-height: 16px;
