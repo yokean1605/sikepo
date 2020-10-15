@@ -52,9 +52,10 @@
 header {
     background-color: #004AC1;
     min-height: 100%;
-    background-image: url('./../img/ornament_landingpageutama.svg');
+    background-image: url('./../img/LandingPageBackground.svg');
     background-repeat: no-repeat;
     padding-bottom: 175px;
+    background-size: contain !important;
     .img-logo {
         max-width: 270px;
         position: relative;
@@ -88,7 +89,7 @@ section.about-me {
     min-height: 607px;
     padding: 115px 0 100px 0;
     background-color: #004AC1;
-    background-image: url(./../img/about.svg);
+    background-image: url(./../img/bg-about.svg);
     background-size: contain;
     background-repeat: no-repeat;
     .content-tentang-kami {
@@ -131,6 +132,7 @@ section.produk-hukum {
         width: 100%;
         color: black;
         text-align: center;
+        font-family: $font-opensans;
     }
 }
 
@@ -176,6 +178,7 @@ section.statistik-kegiatan {
             text-align: center;
             margin: 0 auto;
             margin-top: 45px;
+            font-family: $font-opensans;
         }
     }
 }
@@ -189,6 +192,7 @@ section.panduan {
     .content-paragraph {
         p {
             color: black;
+            font-family: $font-opensans;
         }
     }
 }
@@ -200,6 +204,7 @@ section.panduan {
     line-height: 100%;
     letter-spacing: -0.03em;
     margin-bottom: 20px;
+    font-family: $font-opensans;
 }
 .list-menus-footer li a{
     font-style: normal;
@@ -208,6 +213,7 @@ section.panduan {
     line-height: 208.52%;
     letter-spacing: -0.03em;
     color: #737373;
+    font-family: $font-opensans;
 }
 
 .content-footer-kemenag {
@@ -240,6 +246,7 @@ section.panduan {
         font-weight: normal;
         font-size: 14px;
         line-height: 173.68%;
+        font-family: $font-opensans;
     }
 }
 
@@ -248,7 +255,6 @@ section.panduan {
     min-height: 58px;
     min-width: 210px;
     color: white;
-
     font-weight: 600;
     font-size: 16px;
     line-height: 22px;
@@ -256,6 +262,8 @@ section.panduan {
     letter-spacing: -0.03em;
     border-radius: 0px;
     padding: 16px 0;
+    font-family: $font-opensans;
+
 }
 
 .content-paragraph {
@@ -266,6 +274,7 @@ section.panduan {
     color: #FFFFFF;
     margin-top: 30px;
     margin-bottom: 50px;
+    font-family: $font-opensans;
     @media screen and(min-width: 991px){
         width: 75%;
     }
@@ -280,12 +289,13 @@ section.panduan {
     letter-spacing: -0.03em;
     border-bottom: 2px solid #FF7200;
     padding: 0px;
+    font-family: $font-opensans;
 }
 
 .title-section {
     font-style: normal;
     font-weight: 600;
-    font-size: 45px;
+    font-size: 40px;
     line-height: 103.8%;
     letter-spacing: -0.02em;
     color: black;
@@ -345,6 +355,12 @@ section.panduan {
     .line-copyright{
         padding-top: 15px;
         border-top: 1px solid #B6B6B6;
+        font-family: $font-opensans;
+    }
+}
+.list-medsos {
+    li a {
+        color: #333333;
     }
 }
 .copyright-text {
